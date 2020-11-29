@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+:root {
+  --mainPink: #ef7998;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --mainDark: #2d2d2d;
+  --mainDarkie: #434343;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+  --mainBlue: #1a75ff;
+
+  --success: #0DC143;
+  --error: #e74c3c;
+}
+
+body {
+  font-family: 'Shadows Into Light', cursive;
+  color: var(--mainGrey);
+}
+
+/************ logo *********/
+.logo{
+  max-width: 50px;
+  max-height: 30px;
+  margin-left: 30px;
+}
+
+.logo:hover{
+  transform: rotateY(180deg);
+}
+
+
+
+/****************** navbar **/
+.navbar{
+  background: var(--mainDark);
+  color: var(--mainGrey);
+}
+
+.navbar-toggler{
+  outline: none!important;
+}
+
+.toggler-btn {
+  padding: 5px;
+}
+.toggler-btn:hover {
+  background: var(--mainDarkie);
+  color: var(--mainDark);
+  border-radius: 3px;
+}
+
+.nav-link{
+  font-size: 1.4rem;
+  color: var(--mainWhite);
+  transition: all 0.5s linear;
+  margin: 1px;
+}
+
+.nav-active{
+  background: var(--mainGrey);
+  color: var(--mainDark);
+  width: 15vh;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.nav-link:hover{
+  font-size: 1.5rem;
+  color: var(--mainGrey);
+  background: var(--mainDarkie);
+  width: 15vh;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 3px;
+}
+
+
+/********************* bar **/
+
+.bar {
+  width: 30px;
+  height: 5px;
+  margin: 5px;
+  background: var(--mainWhite);
+  transition: all 0.5s ease;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-5px, -8px);
+}
+
+
+/********** home  ************/
+#home{
+  background: linear-gradient(rgba(40,40,40,0.7), rgba(0,0,0,0.8)),
+                          url("/img/home-bg.jpeg")
+                          center/cover fixed no-repeat;
+}
+
+.card-section{
+  color: var(--mainGrey);
+  border-radius: 10px;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.1)),
+                          bottom/cover fixed no-repeat;
+  min-height: 75vh;
+}
+
+.card-body h3{
+  color: var(--mainGrey);
+}
+.fa{
+  color:var(--mainGrey);
+}
+
+.align-self{
+  opacity: 0.7;
+}
+.align-self:hover{
+  opacity: 1;
+}
+
+
+/************* sign up *****************/
+.sign-title {
+  opacity: 0.7;
+}
+.sign-title:focus {
+  opacity: 1;
+}
+.sign-title:hover {
+  opacity: 1;
+}
+
+.form-group {
+  position: relative;
+  opacity: 0.7;
+}
+.form-group:hover {
+  opacity: 1;
+}
+
+.form-group label{
+  color: var(--mainWhite);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input{
+  border: 1px solid var(--mainGrey);
+  padding: 0 35px 0 15px;
+}
+
+.form-group input:active{
+  opacity: 1;
+}
+
+.form-group input:focus{
+  outline: 5px;
+  border-color: var(--mainDarkie);
+}
+
+.form-group.success input{
+  border-color: var(--success);
+}
+
+.form-group.error input{
+  border-color: var(--error);
+}
+
+.form-group small{
+  color: var(--error);
+  position: absolute;
+  visibility: hidden;
+}
+
+.form-group.error small{
+  visibility: visible;
+}
+
+.form button{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.sign-up{
+  opacity: 0.3;
+  text-decoration: none;
+  color: var(--mainBlack);
+}
+.sign-up:hover{
+  opacity: 1;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+/******* contents for connect and share ****/
+
+.display-4, .display-6{
+  opacity: 0.8;
+}
+.display-4:hover, .display-6:hover{
+  opacity: 1;
+  font-weight: bold;
+}
+
+p{
+  opacity: 0.7;
+}
+p:hover{
+  opacity: 1;
+}
+
+.find{
+  opacity: 0.5;
+}
+.find:hover{
+  opacity: 1;
+}
+
+.image{
+  opacity: 0.7;
+}
+
+.image:hover{
+  opacity: 1;
+}
+
+
+
+/************  connect ********/
+#connect{
+  color: var(--mainGrey);
+  background: linear-gradient(rgba(0,155,255,0.1), rgba(0,155,255,0.1)),
+                          bottom/cover fixed no-repeat;
+  min-height: 75vh;
+}
+.section-title a{
+  text-decoration: none;
+}
+
+/********* share ********/
+#share{
+  color: var(--mainGrey);
+  background: linear-gradient(rgba(255,255,0,0.1), rgba(255,255,0,0.1))),
+                          bottom/cover fixed no-repeat;
+  min-height: 75vh;
+}
+
+/************* footer ***********/
+/******************** footer *****/
+footer{
+  font-size: 1.2rem;
+}
+
+.footer-title{
+  background: var(--mainDark);
+  text-align: center;
+}
+
+.footer-title a{
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.6;
+  padding: 0px 20px;
+}
+
+.footer-title a:hover{
+  color: var(--mainDarkie);
+  opacity: 1;
+}
+
+.footer-brand{
+  background: var(--mainDarkie);
+  color: var(--mainGrey);
+}
+.footer-icon:hover{
+  color: var(--mainPink);
+}
